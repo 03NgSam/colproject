@@ -1,0 +1,2 @@
+# colproject
+plag check project
