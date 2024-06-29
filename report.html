@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <img id="logo" src="nitte.png">
+        <p id="head">Excel Report</p>
+    </div>
+
+    <div class="report-content">
+        <h2>Your Progress Report </h2>
+        <p>Your Excel report will be displayed soon .</p>
+        <button onclick="generateExcel()">Download Excel</button>
+    </div>
+
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+    <script>
+      
+            function generateExcel() {
+        var wb = XLSX.utils.book_new();
+        var ws_data = [
+            ["Faculty", "Designation", "Department", "Phone", "Email"],
+            ["John Doe", "Assistant Professor", "Computer Science", "1234567890", "john.doe@example.com"]
+            // Add more rows as needed
+        ];
+        var ws = XLSX.utils.aoa_to_sheet(ws_data);
+
+        XLSX.utils.book_append_sheet(wb, ws, "Report");
+
+        XLSX.writeFile(wb, "report.xlsx");
+    }
+        
+    </script>
+</body>
+</html>
