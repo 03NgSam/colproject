@@ -1,5 +1,13 @@
-body{
-    background-color: #39b3e6;;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #39b3e6;
+}
+
+.main-content {
+    flex: 1;
 }
 
 
@@ -26,20 +34,19 @@ body{
     font-size: 36px;
     font-weight: bolder;
     color: #39b3e6;
-    margin-right: 500px;
+    margin-right: 300px;
 }
-.mform{
-    margin:30px ;
+.mform {
+    flex: 1;
+    margin: 30px;
     border: 5px solid white;
     border-radius: 20px;
     padding: 25px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: alegreyasansM;
     font-size: 25px;
-  
-
-   
 }
+
 input{
     height: 27px;
     width: 270px;
@@ -122,4 +129,87 @@ input{
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.custom-button, .logout-button {
+    margin-right: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #39b3e6;
+    border: none;
+    border-radius: 5px;
+    height: 100px;
+    line-height: 1;
+}
+
+.custom-button:hover, .logout-button:hover {
+    background-color: #85c4ee;
+}
+footer {
+    background-color: white;
+    color: #39b3e6;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border-top: 2px solid #39b3e6;
+}
+
+
+.card-slider-container {
+    display: flex;
+    
+   
+    margin: 20px;
+}
+
+.card-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+   
+}
+
+.card {
+    flex: 0 0 33.3333%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #39b3e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #a4d1ef;
 }
