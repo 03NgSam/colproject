@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-content {
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .card-slider-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card-slider {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        .logout-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #2eaee9;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-button:hover {
+            background-color: #768bb3;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="nav">
+            <img id="logo" src="nitte.png" alt="Logo">
+            <p id="head">Academic Integrity Portal</p>
+            <button class="logout-button">Logout</button>
+        </div>
+
+        <div class="card-slider-container">
+            <div class="card-slider">
+                <div class="card">
+                    <h2>Add users</h2>
+                    <p>Add users to database</p>
+                    <button onclick="location.href='add.html'">ADD</button>
+                </div>
+                <div class="card">
+                    <h2>Delete users</h2>
+                    <p>Delete previous users</p>
+                    <button onclick="location.href='delete.html'">DELETE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 NMAM Institute Of Technology, Nitte</p>
+    </footer>
+
+    <script src="scriptt.js"></script>
+</body>
+</html>
