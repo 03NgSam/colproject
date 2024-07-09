@@ -67,3 +67,9 @@ document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault();
     }
 });
+
+document.querySelector('.custom-button').addEventListener('click', function() {
+    // Add functionality for the new button here
+    alert('New Button Clicked!');
+});
+
